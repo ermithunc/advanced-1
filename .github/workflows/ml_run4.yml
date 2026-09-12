@@ -26,7 +26,7 @@ jobs:
 
     container:
       image: jupyter/scipy-notebook:latest
-
+      options: --user root
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
